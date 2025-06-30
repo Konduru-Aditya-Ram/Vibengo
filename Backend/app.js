@@ -11,7 +11,7 @@ const mapsRoutes = require('./routes/maps.routes');
 const rideRoutes = require('./routes/ride.routes');
 const sharingrideRoutes = require('./routes/sharingride.routes');
 const lfsrideRoutes = require('./routes/lfsride.routes');
-const cors = require('cors');
+
 
 connectToDb();
 
