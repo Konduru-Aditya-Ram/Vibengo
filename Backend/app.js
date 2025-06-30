@@ -11,11 +11,15 @@ const mapsRoutes = require('./routes/maps.routes');
 const rideRoutes = require('./routes/ride.routes');
 const sharingrideRoutes = require('./routes/sharingride.routes');
 const lfsrideRoutes = require('./routes/lfsride.routes');
+const cors = require('cors');
 
 connectToDb();
 
+app.use(cors({
+  origin: 'https://vibengo.vercel.app',
+  credentials: true, // only if you're using cookies
+}));
 
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
