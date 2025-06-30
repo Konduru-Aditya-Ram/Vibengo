@@ -16,9 +16,9 @@ const lfsrideRoutes = require('./routes/lfsride.routes');
 connectToDb();
 
 app.use(cors({
-  origin: 'https://vibengo.vercel.app',
+  origin: '*',
    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, // only if you're using cookies
+ 
 }));
 
 app.use(express.json());
