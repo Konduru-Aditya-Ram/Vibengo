@@ -13,6 +13,9 @@ const sharingrideRoutes = require('./routes/sharingride.routes');
 const lfsrideRoutes = require('./routes/lfsride.routes');
 
 connectToDb();
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 app.use(cors());
 app.use(express.json());
