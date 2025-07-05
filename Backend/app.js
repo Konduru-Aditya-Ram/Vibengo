@@ -24,7 +24,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // preflight across the board
-app.options('*', cors(corsOptions));
+app.options('*', cors(corsOptions), (req, res) => {
+  res.sendStatus(200);
+});
 
 // 2) Body parsers & cookies
 app.use(express.json());
