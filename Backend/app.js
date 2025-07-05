@@ -18,7 +18,7 @@ const app = express();
 // 1) CORS configuration
 const corsOptions = {
   origin: 'https://vibengo.vercel.app',   // allow only your deployed front‑end
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE','OPTIONS'],
   credentials: true,                      // allow cookies/auth headers
 };
 app.use(cors(corsOptions));
