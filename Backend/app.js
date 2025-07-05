@@ -16,17 +16,8 @@ const lfsrideRoutes    = require('./routes/lfsride.routes');
 const app = express();
 
 // 1) CORS configuration
-const corsOptions = {
-  origin: 'https://vibengo.vercel.app',   // allow only your deployed front‑end
-  methods: ['GET', 'POST', 'PUT', 'DELETE','OPTIONS'],
-  credentials: true,                      // allow cookies/auth headers
-};
-app.use(cors(corsOptions));
-
-// preflight across the board
-app.options('*', cors(corsOptions), (req, res) => {
-  res.sendStatus(200);
-});
+app.use(cors({ origin: '*' }));
+app.options('*', cors());
 
 // 2) Body parsers & cookies
 app.use(express.json());
