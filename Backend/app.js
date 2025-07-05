@@ -18,7 +18,7 @@ const app = express();
 // 1) CORS configuration
 console.log("enabled cors")
 
-app.use(cros());
+app.use(cors());
 console.log("done")
 // 2) Body parsers & cookies
 app.use(express.json());
