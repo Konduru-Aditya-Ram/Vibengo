@@ -78,7 +78,7 @@ PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-
+```
 ### Frontend
 
 - **React** (v18) + **Vite**  
@@ -107,4 +107,4 @@ Create a `.env` in **both** the backend and frontend folders:
 ```bash
 VITE_BACKEND_URL=http://localhost:3000
 VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-
+```
