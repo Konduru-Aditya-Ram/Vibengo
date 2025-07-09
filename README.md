@@ -115,3 +115,40 @@ GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 VITE_BACKEND_URL=http://localhost:3000
 VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 ```
+### Installation & Running
+# 1. Clone the repository
+git clone https://github.com/Konduru-Aditya-Ram/Vibengo.git
+cd Vibengo
+
+# 2. Backend setup
+cd Backend
+npm install
+npm start
+# Server will run at http://localhost:3000
+
+# 3. Frontend setup
+cd ../frontend
+npm install
+npm run dev
+# Open http://localhost:5173 in your browser
+
+### Project Structure
+Vibengo
+├── Backend
+│   ├── controllers
+│   ├── db
+│   ├── middlewares
+│   ├── models
+│   ├── routes
+│   ├── socket.js
+│   ├── app.js
+│   └── server.js
+└── frontend
+    ├── public
+    ├── src
+    │   ├── components
+    │   ├── pages
+    │   ├── services
+    │   └── App.jsx
+    ├── vite.config.js
+    └── tailwind.config.js
