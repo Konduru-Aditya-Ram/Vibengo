@@ -59,8 +59,8 @@ A full‑stack ride‑hailing platform with support for single rides, shared rid
 ---
 
 ## Acknowledgments
-**Made with dedication and collaboration at IIT Indore**
-**Under the supervision of Dr. Subhra Mazumdar**
+Made with dedication and collaboration at **IIT Indore**  
+Under the supervision of **Dr. Subhra Mazumdar**
 
 ## Getting Started
 
