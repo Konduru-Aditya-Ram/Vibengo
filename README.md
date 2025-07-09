@@ -20,9 +20,8 @@ A full‑stack ride‑hailing platform with support for single rides, shared rid
   - [Prerequisites](#prerequisites)  
   - [Environment Variables](#environment-variables)  
   - [Installation & Running](#installation--running)  
-- [API Endpoints](#api-endpoints)  
 - [Project Structure](#project-structure)  
-- [License](#license)  
+ 
 
 ---
 
@@ -30,8 +29,7 @@ A full‑stack ride‑hailing platform with support for single rides, shared rid
 
 - **User & Captain Authentication** (JWT‑based)  
 - **Single Rides**: Request, fare estimation, confirmation, OTP‑secured start, and completion  
-- **Shared Rides**: Create/share ride pools, add passengers mid‑trip  
-- **LFS Rides**: Long‑fare‑sharing rides with end‑trip settlement  
+- **Shared Rides**: Create/share ride pools, add passengers mid‑trip   
 - **Real‑time Updates**: Socket.io notifications for ride status  
 - **Maps Integration**: Google Maps APIs for address auto‑complete, geocoding, distance & time estimation  
 - **Responsive React Frontend** with GSAP animations and Tailwind CSS  
@@ -115,24 +113,31 @@ GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 VITE_BACKEND_URL=http://localhost:3000
 VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 ```
-### Installation & Running
-# 1. Clone the repository
-git clone https://github.com/Konduru-Aditya-Ram/Vibengo.git
-cd Vibengo
+## Installation & Running
 
-# 2. Backend setup
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/Konduru-Aditya-Ram/Vibengo.git
+   cd Vibengo
+
+
+2. **Backend setup**
+```bash
 cd Backend
 npm install
 npm start
 # Server will run at http://localhost:3000
-
-# 3. Frontend setup
+```
+3. **Frontend setup**
+```bash
 cd ../frontend
 npm install
 npm run dev
-# Open http://localhost:5173 in your browser
+```
+**Open http://localhost:5173 in your browser**
 
 ### Project Structure
+```bash
 Vibengo
 ├── Backend
 │   ├── controllers
@@ -152,3 +157,4 @@ Vibengo
     │   └── App.jsx
     ├── vite.config.js
     └── tailwind.config.js
+```
