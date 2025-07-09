@@ -15,7 +15,8 @@ A full‑stack ride‑hailing platform with support for single rides, shared rid
 ## 📚 Table of Contents
 
 - [Features](#features)  
-- [Tech Stack](#tech-stack)  
+- [Tech Stack](#tech-stack)
+- [Acknowledgments](#Acknowledgments)
 - [Getting Started](#getting-started)  
   - [Prerequisites](#prerequisites)  
   - [Environment Variables](#environment-variables)  
@@ -56,6 +57,10 @@ A full‑stack ride‑hailing platform with support for single rides, shared rid
 - **Axios** for HTTP requests  
 
 ---
+
+## Acknowledgments
+**Made with dedication and collaboration at IIT Indore**
+**Under the supervision of Dr. Subhra Mazumdar**
 
 ## Getting Started
 
