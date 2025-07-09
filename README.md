@@ -78,3 +78,33 @@ PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+
+### Frontend
+
+- **React** (v18) + **Vite**  
+- **Tailwind CSS** for styling  
+- **GSAP** + **@gsap/react** for animations  
+- **@react-google-maps/api** for map components  
+- **Socket.io‑client** for live updates  
+- **Axios** for HTTP requests  
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js** (>=16.0) & **npm**  
+- **MongoDB** instance (local or Atlas)  
+- **Google Maps API key** with Places & Directions enabled  
+
+### Environment Variables
+
+Create a `.env` in **both** the backend and frontend folders:
+
+#### Frontend (`/frontend/.env`)
+
+```bash
+VITE_BACKEND_URL=http://localhost:3000
+VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+
